@@ -1,0 +1,10 @@
+export const ADD_MOVIE = 'ADD_MOVIE';
+export const ADD_MOVIES = 'ADD_MOVIES';
+export const CLEAR_MOVIES = 'CLEAR_MOVIES';
+export const TOGGLE_CHECKED = 'TOGGLE_CHECKED';
+export const DELETE_MOVIE = 'DELETE_MOVIE';
+export const SET_FILTER = 'SET_FILTER';
+export const CLEAR_MOVIE = 'CLEAR_MOVIE';
+export const TOGGLE_TOOLTIP = 'TOGGLE_TOOLTIP';
+export const GET_MOVIE = 'GET_MOVIE';
+export const TOGGLE_LOADING = 'TOGGLE_LOADING';

@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+#container {
+    font-family: 'Roboto', sans-serif;
+}
+
+input:focus {
+    outline: none;
+}
+
+.claro-spinner {
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    background: url(/images/claro-spritesheet.png) left center;
+    animation: play 1.8s steps(44) infinite;
+}
+
+.loading-full-screen {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+}
+
+@keyframes play {
+    100% {background-position: -2640px;}
+}
+
+.hidden {
+    visibility: hidden;
+}

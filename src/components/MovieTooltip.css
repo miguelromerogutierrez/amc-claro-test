@@ -1,0 +1,150 @@
+.tooltip {
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    -moz-transition: visibility 0s, opacity 0.5s linear;
+    -o-transition: visibility 0s, opacity 0.5s linear;
+    -ms-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: hidden;
+    opacity: 0;
+    
+    background: #212121;
+    position: absolute;
+    right: -340px;
+    left: 104%;
+    top: -30%;
+    z-index: 1;
+
+    color: white;
+    cursor: initial;
+
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 2px;
+
+    padding: 10px;
+}
+
+.tooltip::before {
+    position: absolute;
+    top: 49.6%;
+    left: -22px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 20.8px 12px 0;
+    border-color: transparent #464646 transparent transparent;
+}
+
+.tooltip::after {
+    position: absolute;
+    top: 50%;
+    left: -19px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 19.1px 11px 0;
+    border-color: transparent #212121 transparent transparent;
+}
+
+.tooltip.reverse {
+    left: -340px;
+    right: 104%;
+}
+
+.tooltip.reverse::before {
+    position: absolute;
+    top: 49.8%;
+    left: 100.5%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 12px 0px 12px 20.8px;
+    border-color: transparent transparent transparent #464646;
+}
+
+.tooltip.reverse::after {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 0px 11px 19.1px;
+    border-color: transparent transparent transparent #212121
+}
+
+.movie-list_item:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-content {
+    margin: 0;
+}
+
+.tooltip-spec {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0 0;
+}
+
+.tooltip-spec > span {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.tooltip-spec > .tooltip-spec_votes .star {
+    fill: goldenrod;
+}
+
+.raitng_code-container {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    background: transparent;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: normal;
+
+    margin: 16px 0 8px 0px; 
+}
+
+.sinopsis-container {
+    font-weight: normal;
+    background: #ffffff;
+    color: #4a4a4a;
+    line-height: 1.3;
+    font-size: 14px;
+    
+    margin: 16px -10px;
+    padding: 5px 10px;
+}
+
+.sinopsis-paragraph {
+    margin: 0;
+}
+
+.sinopsis-paragraph b {
+    color: #212121;
+}
+
+.see-detail-container {
+    text-align: right;
+}
+
+.see-detail-button {
+    background: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 6px 12px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}

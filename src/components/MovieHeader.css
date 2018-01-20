@@ -1,0 +1,30 @@
+.movieheader {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.movieheader_title{
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    margin-right: 10px;
+}
+.movieheader_search-request-container {
+    position: relative;
+    width: 233px;
+}
+.movieheader_filter-movie {
+    height: 14px;
+    border-radius: 40px;
+    padding: 8px;
+    width: 213px;
+}
+.movieheader_search-icon {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    fill: black;
+    height: 24x;
+    width: 24px;
+}

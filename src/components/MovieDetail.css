@@ -1,0 +1,66 @@
+.moviedetail {
+    color: white;
+    font-weight: 500;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1px 0;
+    margin-top: 16px;
+}
+
+.moviedetail h1 {
+    font-size: 24px;
+    margin-left: 16px;
+}
+
+.detail-container {
+    display: flex;
+    align-content: space-between;
+}
+
+.detail-image-container {
+    width: 480px;
+    height: 266px;
+    margin-right: 16px;
+}
+
+.detail-image-container img {
+    width: 100%;
+}
+
+.detail-media-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0;
+}
+
+.detail-extended-container .box {
+    margin: 2px;
+}
+
+.detail-spec-container {
+    font-size: 14px;
+    font-weight: normal;
+
+    width: 600px;
+}
+
+.detail-description {
+    line-height: 1.4;
+}
+
+.box {
+    display: inline-block;
+    padding: 2px 5px;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    background: transparent;
+    color: #ffffff;
+}
+
+.box.box-fill {
+    background-color: #ffffffb2;
+    border: none;
+    color: #000000;
+    font-weight: 500;
+}
