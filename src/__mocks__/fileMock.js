@@ -1,1 +1,1 @@
-export default '-!svg-react-loader!../images/ic_search_black_24px.svg';
+export default 'file-mock';

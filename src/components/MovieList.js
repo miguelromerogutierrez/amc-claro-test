@@ -17,8 +17,6 @@ export default class MovieList extends Component {
       this.props.addMovies(resultJson.response.groups);
       this.props.toggleLoading();
     });
-    this.overlay = [];
-    this.tooltips = [];
   }
 
   componentWillUnmount() {

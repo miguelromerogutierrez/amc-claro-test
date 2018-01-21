@@ -9,7 +9,6 @@ export default class MovieHeader extends Component {
   handleEnter(e) {
     if (e.which === 13) {
       this.props.setFilter(e.target.value);
-      // e.target.value = '';
     }
   }
 

@@ -6,10 +6,6 @@ const Movie = Map({});
 const loadingState = Map({
   active: true
 });
-const tooltipInitialState = {
-  show: false,
-  content: null
-};
 
 export function movies(state = initialState, action = null) {
   const { type, payload } = action;
@@ -28,8 +24,6 @@ export function movie(state = Movie, action = null) {
   switch (type) {
     case ActionTypes.ADD_MOVIE:
       return Movie.merge(payload.movie);
-    case ActionTypes.GET_MOVIE:
-      return Movie.toJS();
     case ActionTypes.DELETE_MOVIE:
       return Movie.clear();
     default:
@@ -52,18 +46,6 @@ export function filter(state = 'All', action = null) {
   switch (type) {
     case ActionTypes.SET_FILTER:
       return payload;
-    default:
-      return state;
-  }
-}
-
-export function tooltip(state = tooltipInitialState, action = null) {
-  const { type, payload } = action;
-  const newState = state;
-  switch (type) {
-    case ActionTypes.TOGGLE_TOOLTIP:
-      newState.show = !payload.tooltip.show;
-      return { ...newState };
     default:
       return state;
   }
