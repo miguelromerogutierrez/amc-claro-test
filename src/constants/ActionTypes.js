@@ -1,7 +1,6 @@
 export const ADD_MOVIE = 'ADD_MOVIE';
 export const ADD_MOVIES = 'ADD_MOVIES';
 export const CLEAR_MOVIES = 'CLEAR_MOVIES';
-export const TOGGLE_CHECKED = 'TOGGLE_CHECKED';
 export const DELETE_MOVIE = 'DELETE_MOVIE';
 export const SET_FILTER = 'SET_FILTER';
 export const CLEAR_MOVIE = 'CLEAR_MOVIE';

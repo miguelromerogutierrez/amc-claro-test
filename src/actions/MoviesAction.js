@@ -1,4 +1,4 @@
-import { ADD_MOVIE, ADD_MOVIES, CLEAR_MOVIES, TOGGLE_CHECKED, DELETE_MOVIE, SET_FILTER, CLEAR_MOVIE, TOGGLE_TOOLTIP, TOGGLE_LOADING } from '../constants/ActionTypes';
+import { ADD_MOVIE, ADD_MOVIES, CLEAR_MOVIES, DELETE_MOVIE, SET_FILTER, CLEAR_MOVIE, TOGGLE_TOOLTIP, TOGGLE_LOADING } from '../constants/ActionTypes';
 
 export function togleTooltip(tooltip) {
   return {
@@ -28,17 +28,7 @@ export function addMovies(movies) {
   return {
     type: ADD_MOVIES,
     payload: {
-      movies,
-      completed: false
-    }
-  };
-}
-
-export function toggleChecked(index) {
-  return {
-    type: TOGGLE_CHECKED,
-    payload: {
-      index
+      movies
     }
   };
 }

@@ -19,7 +19,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 app.use('/api', require('../src/mock'));
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.use(express.static(path.resolve(__dirname, '../src/images')));
+app.use('/images', express.static(path.resolve(__dirname, '../src/images')));
 app.use(express.static(path.resolve(__dirname, '../src/public')));
 
 app.listen(3000, function(err) {

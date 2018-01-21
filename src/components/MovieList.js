@@ -1,6 +1,5 @@
 import React, { Component, PropTypes } from 'react';
 import Immutable from 'immutable';
-// import { Link } from 'react-router-dom';
 
 import Tooltip from './MovieTooltip';
 
