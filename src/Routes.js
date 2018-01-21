@@ -4,8 +4,8 @@ import { syncHistoryWithStore } from 'react-router-redux';
 
 import store from './lib/store';
 const history = syncHistoryWithStore(hashHistory, store);
-import IndexPage from 'pages/IndexPage';
-import MovieApp from 'components/MovieApp';
+import IndexPage from './pages/IndexPage';
+import MovieApp from './components/MovieApp';
 import MovieDetail from './components/MovieDetail';
 
 export default class Routes extends Component {

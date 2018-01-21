@@ -105,7 +105,7 @@ const production = {
       'pages': __dirname + '/src/pages/',
       'reducers': __dirname + '/src/reducers/',
       'styles': __dirname + '/src/styles',
-      'images': __dirname + '/src/public/images',
+      'images': __dirname + '/src/images',
       'lib': __dirname + '/src/lib'
     }
   },
